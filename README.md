@@ -1,13 +1,33 @@
-## Installation
-```
-npm install -g nativescript
-```
+# NativeScript-Starter
+A Kinvey starter application that uses the Kinvey NativeScript 3.x SDK.
+
+## Setup
+
+1. Clone the repo.
+2. Create an app backend using the [console](http://console.kinvey.com) for your application.
+2. Create a user (with password) using the [console](http://console.kinvey.com) for your application.
+3. Open `app/main-page.js` in a text editor
+4. Search for `<appKey>` and `<appSecret>` and replace with your `appKey` and `appSecret` for the app you created in step 1.
+4. Search for `<username>` and `<password>` and replace with your `username` and `password` for the user you created in step 2.
+5. Create a `books` collection and import `data/books.json`.
 
 ## Run
-```
-tns run ios
-```
-or
-```
-tns run android
-```
+
+1. Execute `npm install`.
+2. Execute `npm run start:ios` to run the iOS application.
+3. Execute `npm run start:android` to run the Android application.
+
+## License
+
+Copyright (c) 2017 Kinvey Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+in compliance with the License. You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in
+writing, software distributed under the License
+is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied. See the License for the specific language governing permissions and limitations under
+the License.

@@ -7,14 +7,14 @@ exports.pageLoaded = function() {
 
 exports.initialize = function() {
     Kinvey.initialize({
-        appKey: 'kid_rJQ3fa0il',
-        appSecret: 'f934cde41bef41368bfa778692e690aa'
+        appKey: '<appKey>',
+        appSecret: '<appSecret>'
     })
         .then(function(user) {
             console.dump(user);
 
             if (user === null) {
-                return Kinvey.User.loginWithMIC('https://localhost:3000');
+                return Kinvey.User.login('<username>', '<password>');
             }
 
             return user;
